@@ -3,8 +3,8 @@ package main
 import (
 	"os"
 
-	"github.com/wcharczuk/go-chart"
-	"github.com/wcharczuk/go-chart/drawing"
+	"github.com/hbbio/go-chart"
+	"github.com/hbbio/go-chart/drawing"
 )
 
 func main() {
@@ -22,17 +22,17 @@ func main() {
 	)
 
 	stackedBarChart := chart.StackedBarChart{
-		Title:      "Quarterly Sales",
-		TitleStyle: chart.StyleShow(),
+		Title: "Quarterly Sales",
+		// TitleStyle: chart.StyleShow(),
 		Background: chart.Style{
 			Padding: chart.Box{
 				Top: 75,
 			},
 		},
-		Width:        800,
-		Height:       600,
-		XAxis:        chart.StyleShow(),
-		YAxis:        chart.StyleShow(),
+		Width:  800,
+		Height: 600,
+		// XAxis:        chart.StyleShow(),
+		// YAxis:        chart.StyleShow(),
 		BarSpacing:   40,
 		IsHorizontal: true,
 		Bars: []chart.StackedBar{
